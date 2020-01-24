@@ -4,3 +4,4 @@ alert();
 console.log();
 document -> ponte entre html e js
 document.querySelector("h1");
+melhor utilizar pela classe que pela tag
