@@ -1,0 +1,6 @@
+Aula 01
+
+alert();
+console.log();
+document -> ponte entre html e js
+document.querySelector("h1");
