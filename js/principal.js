@@ -42,3 +42,48 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc.toFixed(2);
     }
 }
+
+titulo.addEventListener("click", mostraMensagem);
+
+function mostraMensagem(){
+    console.log("Fui clicado!");
+}
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+        
+    var form = document.querySelector("#form-adiciona");
+
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
+
+    /*console.log(nome,peso,altura,gordura)*/
+    /*criando os elementos de uma linha do html a partir das tags*/
+    var pacienteTr = document.createElement("tr");
+
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
+
+    /*appendChild: Ela adiciona como filho o elemento passado a ela como parametro*/
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(gorduraTd);
+
+    console.log(pacienteTr); /** Testando a estrutura da tag <td> */
+
+    var tabela = document.querySelector("#tabela-pacientes");
+
+    tabela.appendChild(pacienteTr);
+});

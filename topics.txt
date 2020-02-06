@@ -1,7 +1,29 @@
 Aula 01
-
+----------------------------------------
 alert();
 console.log();
 document -> ponte entre html e js
 document.querySelector("h1");
 melhor utilizar pela classe que pela tag
+
+
+Aula 03
+------------------------------------------
+querySelectorAll: lista das informacoes de uma propriedade
+
+modificar stilo no JS (modo direto)
+paciente.style.color = "red";
+
+modificar stilo no JS (modo organizado)
+criar uma classe no CSS e modificar somente la, no JS fazer somente a chamada da classe
+paciente.classList.add("paciente-invalido");
+
+
+Aula 04
+------------------------------------------
+exemplo para criar um form no html
+funcao titulo.addEventListener("click", mostraMensagem);
+
+function mostraMensagem(){
+    console.log("Fui clicado!");
+}
