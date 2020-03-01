@@ -27,3 +27,10 @@ funcao titulo.addEventListener("click", mostraMensagem);
 function mostraMensagem(){
     console.log("Fui clicado!");
 }
+
+Aula 05
+------------------------------------------
+Dividir o código, separando por funcionalidades do sistema
+Os objetos em Javascript
+A quebrar funções grandes em funções menores ,com cada uma com sua responsabilidade
+A função form.reset() para limpar o formulário
